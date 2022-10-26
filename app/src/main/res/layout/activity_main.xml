@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:text="00:00:00"
+        android:textColor="@color/white"
+        android:textSize="74sp"
+        android:textStyle="italic"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/button_pause"
+        style="@style/ThemeOverlay.Material3.FloatingActionButton.Primary"
+        android:layout_width="84sp"
+        android:layout_height="84sp"
+        android:layout_marginTop="140dp"
+        android:backgroundTint="#FFC107"
+
+        android:gravity="center"
+        android:onClick="onClickStop"
+        android:paddingHorizontal="10sp"
+        android:text="pause"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/button_start"
+        style="@style/ThemeOverlay.Material3.FloatingActionButton.Primary"
+        android:layout_width="84sp"
+        android:layout_height="84sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="320dp"
+        android:foregroundTint="@color/black"
+        android:gravity="center"
+        android:onClick="onClickStart"
+        android:paddingHorizontal="10sp"
+
+        android:text="start_"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:backgroundTint="#EA0D0D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/button_reset"
+        style="@style/ThemeOverlay.Material3.FloatingActionButton.Primary"
+        android:layout_width="84sp"
+        android:layout_height="84sp"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="404dp"
+        android:gravity="center"
+        android:onClick="onClickReset"
+        android:paddingHorizontal="10sp"
+        android:text="reset"
+
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:backgroundTint="#D7FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Watch"
+        android:textColor="@color/black"
+        android:textSize="55dp"
+        android:fontFamily="cursive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
